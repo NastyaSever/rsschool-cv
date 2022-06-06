@@ -6,12 +6,12 @@
 
 **Phone:** +375 29 6028848
 
-**Email:** NastyaSeverina1992@yandex.by
+**Email:** Severina.Nastya1992@yandex.by
 
-**Telegram:** NastyaBazuzu
+**Telegram:** @NastyaBazuzu
 
 ### Summary
-I'm working currently in IT sphere but I'm not invove in development. Some time ago I found about RS School and decided to use such great opportunity. My goal is to gain experiecne in JS, get new knoweledge and do my best to start new career.
+I'm working currently in IT sphere but I'm not involved in development. Some time ago I found out about RS School and decided to use such great opportunity. My goal is to gain experience in JS, get new knowledge and do my best to start new career.
 
 ### Skills
 
@@ -23,7 +23,8 @@ I'm working currently in IT sphere but I'm not invove in development. Some time 
 
 *Friday 13th or Black Friday is considered as unlucky day. Calculate how many unlucky days are in the given year. Find the number of Friday 13th in the given year.* 
 
-```function unluckyDays(year){
+```
+function unluckyDays(year){
   let unluckyDays = 0;
   for (let month = 0; month < 12; month++) {
     let d = new Date (year, month, 13);
@@ -32,6 +33,7 @@ I'm working currently in IT sphere but I'm not invove in development. Some time 
     }
   } return unluckyDays
 };
+
 ``` 
 
 ### Education
@@ -39,8 +41,8 @@ Belorussian National Technical University, Faculty of Architecture, Bachelor’s
 
 ### Languages
 
-*Russian - native
-*English - B1
+* Russian - native
+* English - B1
 
 
 
