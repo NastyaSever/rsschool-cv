@@ -1,38 +1,109 @@
 <!DOCTYPE html>
-
-<html lang="en-us">
-    <head>
-        <title>CV</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <h1>Nastasya Severina</h1>
-        </header>
-        <main>
-            <h2>Junior Software Developer</h2>
-            <h3>Contat information:</h3>
-            <ul class="contact">
-                <li>Phone: +375 29 6028848</li>
-                <li>Email: Severina.Nastya1992@yandex.by</li>
-                <li>Telegram: @NastyaBazuzu</li>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li> 
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class=" container container-main">
+        <section class="section section-profile" id="profile">
+          <img src="./imageCV.jpg" alt="profile image" class="section-profile-photo"/>
+          <div class="section-profile-title">
+            <h1 class="section-title main-title">Nastya Severina</h1>
+            <h2 class="section-subtitle">Junior Software Developer</h2>
+          </div> 
+        </section>
+        <section class="section" id="contacts">
+          <h3 class="section-title">Contacts</h3>
+          <ul class="section-list">
+            <li class="section-list contact-item">Minsk, Belarus</li>
+            <li class="section-list contact-item">Email: Severina.Nastya1992@yandex.by</li>
+            <li class="section-list contact-item">Telegram:<a href="https://t.me/NastyaBazuzu" class="telegram-link nav-link">@NastyaBazuzu</a></li>
+            <li class="section-list contact-item">Discord: NastyaSever#0962</li>
+          </ul>
+        </section>
+        <section class="section" id="skills">
+          <h3 class="section-title">Skills</h3>
+          <ul class="section-list">
+            <li>HTML, CSS</li>
+            <li>Git, GitHub</li>
+            <li>JS Basic</li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h3 class="section-title">Education</h3>
+          <p>Belorussian National Technical University, Faculty of Architecture, 2015</p>
+        </section>
+        <section class="section" id="summary">
+          <h3 class="section-title">Summary</h3>
+          <p>I'm working currently in IT sphere but I'm not involved in development. Some time ago I found out about RS School and decided to use such great opportunity. My goal is to gain experience in JS, get new knowledge and do my best to start new career.</p>
+        </section>
+        <section class="section" id="projects">
+          <h3 class="section-title">Projects</h3>
+          <ul class="section-list">
+            <li></li>
+          </ul>
+        </section>
+        <section class="section" id="courses">
+          <h3 class="section-title">Courses</h3>
+          <ul class="section-list">
+            <li>Codcademy:<a href="https://www.codecademy.com/learn/learn-css" class="codcademy-link nav-link">Learn CSS</a></li>
+            <li>Codcademy:<a href="https://www.codecademy.com/learn/learn-html" class="codcademy-link nav-link">Learn HTML</a></li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h3 class="section-title">Code Example</h3>
+          <pre class="pre">
+            <code>
+                function unluckyDays(year){
+                    let unluckyDays = 0;
+                    for (let month = 0; month < 12; month++) {
+                      let d = new Date (year, month, 13);
+                      if (d.getDay() === 5) {
+                        unluckyDays ++
+                      }
+                    } return unluckyDays
+                  };
+            </code>
+          </pre>
+        </section>
+        <section class="section" id="languages">
+          <h3 class="section-title">Languages</h3>
+            <ul class="section-list">
+              <li>Russian - native</li>
+              <li>English - B1</li>
             </ul>
-            <h2>Summary</h2>
-            <p class="summary">I'm working currently in IT sphere but I'm not involved in development. Some time ago I found out about RS School and decided to use such great opportunity. My goal is to gain experience in JS, get new knowledge and do my best to start new career.</p>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS</li>
-                <li>Git, GitHub</li>
-                <li>JS Basic</li>
-            </ul>
-            <h2>Education</h2>
-            <p>Belorussian National Technical University, Faculty of Architecture, Bachelor’s Degree, 2015</p>
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian - native</li>
-                <li>English - B1</li>
-            </ul>
-        </main>
-    </body>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container container-footer">
+        " 2022 "
+        <a href="https://github.com/NastyaSever" class="github-link nav-link">NastyaSever</a>
+      </div>
+    </footer>
+  </body>
 </html>
