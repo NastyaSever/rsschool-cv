@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>CV</title>
   </head>
   <body>
@@ -30,7 +27,7 @@
     <main class="main">
       <div class=" container container-main">
         <section class="section section-profile" id="profile">
-          <img src="./imageCV.jpg" alt="profile image" class="section-profile-photo"/>
+          <img src="./assets/imageCV.jpg" alt="profile image" class="section-profile-photo"/>
           <div class="section-profile-title">
             <h1 class="section-title main-title">Nastya Severina</h1>
             <h2 class="section-subtitle">Junior Software Developer</h2>
@@ -41,7 +38,7 @@
           <ul class="section-list">
             <li class="section-list contact-item">Minsk, Belarus</li>
             <li class="section-list contact-item">Email: Severina.Nastya1992@yandex.by</li>
-            <li class="section-list contact-item">Telegram:<a href="https://t.me/NastyaBazuzu" class="telegram-link nav-link">@NastyaBazuzu</a></li>
+            <li class="section-list contact-item">Telegram: @NastyaBazuzu</li>
             <li class="section-list contact-item">Discord: NastyaSever#0962</li>
           </ul>
         </section>
@@ -64,7 +61,7 @@
         <section class="section" id="projects">
           <h3 class="section-title">Projects</h3>
           <ul class="section-list">
-            <li></li>
+            <li><a href="https://nastyasever.github.io/rsschool-cv/" class="cv-link nav-link">CV Markdown</a></li>
           </ul>
         </section>
         <section class="section" id="courses">
@@ -78,15 +75,14 @@
           <h3 class="section-title">Code Example</h3>
           <pre class="pre">
             <code>
-                function unluckyDays(year){
-                    let unluckyDays = 0;
-                    for (let month = 0; month < 12; month++) {
-                      let d = new Date (year, month, 13);
-                      if (d.getDay() === 5) {
-                        unluckyDays ++
-                      }
-                    } return unluckyDays
-                  };
+              function getMiddle(s)
+              {
+                if (s.length % 2 === 0) {
+                  return s[s.length/2 - 1] + s[s.length/2];
+                } else if (s.length % 2 != 0) {
+                  return (s[Math.floor(s.length/2)]);
+                }
+              }
             </code>
           </pre>
         </section>
@@ -101,8 +97,11 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        " 2022 "
+        <div>
+          2022
         <a href="https://github.com/NastyaSever" class="github-link nav-link">NastyaSever</a>
+        </div>
+        <a href="https://rs.school/js/" class="rsschool"></a>
       </div>
     </footer>
   </body>
