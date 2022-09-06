@@ -10,14 +10,14 @@ html, body {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-  
+
 body {
-    min-height: 100vh;  
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
 }
 
